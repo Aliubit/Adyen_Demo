@@ -1,0 +1,6 @@
+framework module Pods_AdyenDemo_App_AdyenDemo_AppUITests {
+  umbrella header "Pods-AdyenDemo_App-AdyenDemo_AppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

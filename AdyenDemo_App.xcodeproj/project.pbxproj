@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		183765FD27B82FD1000035CE /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183765FC27B82FD1000035CE /* MapAnnotationView.swift */; };
+		1837660027B85E8E000035CE /* POITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183765FF27B85E8E000035CE /* POITableViewCell.swift */; };
+		18B7D37127B6D28F00EEFCF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7D37027B6D28F00EEFCF7 /* AppDelegate.swift */; };
+		18B7D37327B6D28F00EEFCF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7D37227B6D28F00EEFCF7 /* SceneDelegate.swift */; };
+		18B7D37527B6D28F00EEFCF7 /* POIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7D37427B6D28F00EEFCF7 /* POIViewController.swift */; };
+		18B7D37827B6D28F00EEFCF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B7D37627B6D28F00EEFCF7 /* Main.storyboard */; };
+		18B7D37A27B6D29000EEFCF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B7D37927B6D29000EEFCF7 /* Assets.xcassets */; };
+		18B7D37D27B6D29000EEFCF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B7D37B27B6D29000EEFCF7 /* LaunchScreen.storyboard */; };
+		18B7D3A927B6D53C00EEFCF7 /* POIRestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7D3A827B6D53C00EEFCF7 /* POIRestHandler.swift */; };
+		18B7D3AC27B6D56900EEFCF7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7D3AB27B6D56900EEFCF7 /* Constants.swift */; };
+		18B7D3B127B6D64900EEFCF7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7D3B027B6D64900EEFCF7 /* LocationManager.swift */; };
+		18B7D3B327B722C400EEFCF7 /* POIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7D3B227B722C400EEFCF7 /* POIResponseModel.swift */; };
+		18EAC6CD27B92F76008A0540 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC6CC27B92F76008A0540 /* BaseViewController.swift */; };
+		18EAC6CF27B9323E008A0540 /* POIRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC6CE27B9323E008A0540 /* POIRequestModel.swift */; };
+		18EAC6D127B937BD008A0540 /* POIRequestValidation_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC6D027B937BD008A0540 /* POIRequestValidation_Test.swift */; };
+		18EAC6D327B93C3C008A0540 /* POISearchApi_Request_TEst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC6D227B93C3C008A0540 /* POISearchApi_Request_TEst.swift */; };
+		1FFCBED6FA39E546F7A3FB4F /* Pods_AdyenDemo_App_AdyenDemo_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28433F387AE12618213FE59E /* Pods_AdyenDemo_App_AdyenDemo_AppUITests.framework */; };
+		BE570E2154DD12622EDF12AA /* Pods_AdyenDemo_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF9EB619A872A5194C26BBC /* Pods_AdyenDemo_AppTests.framework */; };
+		D51641EDB9059C5D46F235F9 /* Pods_AdyenDemo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAECC92E56F26E8C1B2397A2 /* Pods_AdyenDemo_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B7D38427B6D29100EEFCF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B7D36527B6D28F00EEFCF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B7D36C27B6D28F00EEFCF7;
+			remoteInfo = AdyenDemo_App;
+		};
+		18B7D38E27B6D29100EEFCF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B7D36527B6D28F00EEFCF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B7D36C27B6D28F00EEFCF7;
+			remoteInfo = AdyenDemo_App;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13A50DAEFF221675DF08BC04 /* Pods-AdyenDemo_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdyenDemo_App.debug.xcconfig"; path = "Target Support Files/Pods-AdyenDemo_App/Pods-AdyenDemo_App.debug.xcconfig"; sourceTree = "<group>"; };
+		183765FC27B82FD1000035CE /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		183765FF27B85E8E000035CE /* POITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POITableViewCell.swift; sourceTree = "<group>"; };
+		18B7D36D27B6D28F00EEFCF7 /* AdyenDemo_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdyenDemo_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B7D37027B6D28F00EEFCF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18B7D37227B6D28F00EEFCF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18B7D37427B6D28F00EEFCF7 /* POIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIViewController.swift; sourceTree = "<group>"; };
+		18B7D37727B6D28F00EEFCF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18B7D37927B6D29000EEFCF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18B7D37C27B6D29000EEFCF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18B7D37E27B6D29000EEFCF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B7D38327B6D29100EEFCF7 /* AdyenDemo_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdyenDemo_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B7D38D27B6D29100EEFCF7 /* AdyenDemo_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdyenDemo_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B7D3A827B6D53C00EEFCF7 /* POIRestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIRestHandler.swift; sourceTree = "<group>"; };
+		18B7D3AB27B6D56900EEFCF7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		18B7D3B027B6D64900EEFCF7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		18B7D3B227B722C400EEFCF7 /* POIResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIResponseModel.swift; sourceTree = "<group>"; };
+		18EAC6CC27B92F76008A0540 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		18EAC6CE27B9323E008A0540 /* POIRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIRequestModel.swift; sourceTree = "<group>"; };
+		18EAC6D027B937BD008A0540 /* POIRequestValidation_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIRequestValidation_Test.swift; sourceTree = "<group>"; };
+		18EAC6D227B93C3C008A0540 /* POISearchApi_Request_TEst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POISearchApi_Request_TEst.swift; sourceTree = "<group>"; };
+		28433F387AE12618213FE59E /* Pods_AdyenDemo_App_AdyenDemo_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdyenDemo_App_AdyenDemo_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF9EB619A872A5194C26BBC /* Pods_AdyenDemo_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdyenDemo_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D4A576461AED85115E44401 /* Pods-AdyenDemo_App-AdyenDemo_AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdyenDemo_App-AdyenDemo_AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-AdyenDemo_App-AdyenDemo_AppUITests/Pods-AdyenDemo_App-AdyenDemo_AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		64FA444C017B882DBCED3A92 /* Pods-AdyenDemo_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdyenDemo_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-AdyenDemo_AppTests/Pods-AdyenDemo_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		99647EAF6416AB76E8F01FBC /* Pods-AdyenDemo_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdyenDemo_AppTests.release.xcconfig"; path = "Target Support Files/Pods-AdyenDemo_AppTests/Pods-AdyenDemo_AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		C52F6BE113A0CC593EC17BDC /* Pods-AdyenDemo_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdyenDemo_App.release.xcconfig"; path = "Target Support Files/Pods-AdyenDemo_App/Pods-AdyenDemo_App.release.xcconfig"; sourceTree = "<group>"; };
+		DAECC92E56F26E8C1B2397A2 /* Pods_AdyenDemo_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdyenDemo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F02CB0BED99761C5E95B57F5 /* Pods-AdyenDemo_App-AdyenDemo_AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdyenDemo_App-AdyenDemo_AppUITests.release.xcconfig"; path = "Target Support Files/Pods-AdyenDemo_App-AdyenDemo_AppUITests/Pods-AdyenDemo_App-AdyenDemo_AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B7D36A27B6D28F00EEFCF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51641EDB9059C5D46F235F9 /* Pods_AdyenDemo_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B7D38027B6D29100EEFCF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE570E2154DD12622EDF12AA /* Pods_AdyenDemo_AppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B7D38A27B6D29100EEFCF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FFCBED6FA39E546F7A3FB4F /* Pods_AdyenDemo_App_AdyenDemo_AppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		183765F827B7EF8C000035CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18B7D37B27B6D29000EEFCF7 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		183765FB27B82FC4000035CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				183765FC27B82FD1000035CE /* MapAnnotationView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		183765FE27B85E7D000035CE /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				183765FF27B85E8E000035CE /* POITableViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		18B7D36427B6D28F00EEFCF7 = {
+			isa = PBXGroup;
+			children = (
+				18B7D36F27B6D28F00EEFCF7 /* AdyenDemo_App */,
+				18B7D38627B6D29100EEFCF7 /* AdyenDemo_AppTests */,
+				18B7D39027B6D29100EEFCF7 /* AdyenDemo_AppUITests */,
+				18B7D36E27B6D28F00EEFCF7 /* Products */,
+				FFD506B8B11BB048EF7E91CA /* Pods */,
+				4A846E37CC15B534A6E68F99 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18B7D36E27B6D28F00EEFCF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B7D36D27B6D28F00EEFCF7 /* AdyenDemo_App.app */,
+				18B7D38327B6D29100EEFCF7 /* AdyenDemo_AppTests.xctest */,
+				18B7D38D27B6D29100EEFCF7 /* AdyenDemo_AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B7D36F27B6D28F00EEFCF7 /* AdyenDemo_App */ = {
+			isa = PBXGroup;
+			children = (
+				18B7D37927B6D29000EEFCF7 /* Assets.xcassets */,
+				18B7D37E27B6D29000EEFCF7 /* Info.plist */,
+				18B7D3A027B6D3E700EEFCF7 /* Application */,
+				18B7D3A127B6D3EF00EEFCF7 /* Shared */,
+				18B7D3A227B6D3F400EEFCF7 /* Modules */,
+			);
+			path = AdyenDemo_App;
+			sourceTree = "<group>";
+		};
+		18B7D38627B6D29100EEFCF7 /* AdyenDemo_AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				18EAC6D027B937BD008A0540 /* POIRequestValidation_Test.swift */,
+				18EAC6D227B93C3C008A0540 /* POISearchApi_Request_TEst.swift */,
+			);
+			path = AdyenDemo_AppTests;
+			sourceTree = "<group>";
+		};
+		18B7D39027B6D29100EEFCF7 /* AdyenDemo_AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AdyenDemo_AppUITests;
+			sourceTree = "<group>";
+		};
+		18B7D3A027B6D3E700EEFCF7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				18B7D37027B6D28F00EEFCF7 /* AppDelegate.swift */,
+				18B7D37227B6D28F00EEFCF7 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		18B7D3A127B6D3EF00EEFCF7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				18EAC6D427B9454C008A0540 /* Controller */,
+				183765F827B7EF8C000035CE /* Views */,
+				18B7D3AF27B6D63C00EEFCF7 /* Helper */,
+				18B7D3AA27B6D54600EEFCF7 /* Common */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		18B7D3A227B6D3F400EEFCF7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				18B7D3A327B6D3F900EEFCF7 /* POI */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		18B7D3A327B6D3F900EEFCF7 /* POI */ = {
+			isa = PBXGroup;
+			children = (
+				18B7D3A427B6D42300EEFCF7 /* Model */,
+				18B7D3A527B6D42800EEFCF7 /* View */,
+				18B7D3A627B6D42C00EEFCF7 /* Controller */,
+				18B7D3A727B6D4D700EEFCF7 /* Networking */,
+			);
+			path = POI;
+			sourceTree = "<group>";
+		};
+		18B7D3A427B6D42300EEFCF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				183765FB27B82FC4000035CE /* ViewModel */,
+				18B7D3AD27B6D57700EEFCF7 /* Request */,
+				18B7D3AE27B6D57C00EEFCF7 /* Response */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18B7D3A527B6D42800EEFCF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				183765FE27B85E7D000035CE /* CustomCells */,
+				18B7D37627B6D28F00EEFCF7 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18B7D3A627B6D42C00EEFCF7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18B7D37427B6D28F00EEFCF7 /* POIViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18B7D3A727B6D4D700EEFCF7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				18B7D3A827B6D53C00EEFCF7 /* POIRestHandler.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		18B7D3AA27B6D54600EEFCF7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				18B7D3AB27B6D56900EEFCF7 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		18B7D3AD27B6D57700EEFCF7 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				18EAC6CE27B9323E008A0540 /* POIRequestModel.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		18B7D3AE27B6D57C00EEFCF7 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				18B7D3B227B722C400EEFCF7 /* POIResponseModel.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		18B7D3AF27B6D63C00EEFCF7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				18B7D3B027B6D64900EEFCF7 /* LocationManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		18EAC6D427B9454C008A0540 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18EAC6CC27B92F76008A0540 /* BaseViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A846E37CC15B534A6E68F99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAECC92E56F26E8C1B2397A2 /* Pods_AdyenDemo_App.framework */,
+				28433F387AE12618213FE59E /* Pods_AdyenDemo_App_AdyenDemo_AppUITests.framework */,
+				3BF9EB619A872A5194C26BBC /* Pods_AdyenDemo_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFD506B8B11BB048EF7E91CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13A50DAEFF221675DF08BC04 /* Pods-AdyenDemo_App.debug.xcconfig */,
+				C52F6BE113A0CC593EC17BDC /* Pods-AdyenDemo_App.release.xcconfig */,
+				3D4A576461AED85115E44401 /* Pods-AdyenDemo_App-AdyenDemo_AppUITests.debug.xcconfig */,
+				F02CB0BED99761C5E95B57F5 /* Pods-AdyenDemo_App-AdyenDemo_AppUITests.release.xcconfig */,
+				64FA444C017B882DBCED3A92 /* Pods-AdyenDemo_AppTests.debug.xcconfig */,
+				99647EAF6416AB76E8F01FBC /* Pods-AdyenDemo_AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18B7D36C27B6D28F00EEFCF7 /* AdyenDemo_App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B7D39727B6D29100EEFCF7 /* Build configuration list for PBXNativeTarget "AdyenDemo_App" */;
+			buildPhases = (
+				D67878B874BE5B45028E896E /* [CP] Check Pods Manifest.lock */,
+				18B7D36927B6D28F00EEFCF7 /* Sources */,
+				18B7D36A27B6D28F00EEFCF7 /* Frameworks */,
+				18B7D36B27B6D28F00EEFCF7 /* Resources */,
+				D333D50742FD00DCD7463E8E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdyenDemo_App;
+			productName = AdyenDemo_App;
+			productReference = 18B7D36D27B6D28F00EEFCF7 /* AdyenDemo_App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18B7D38227B6D29100EEFCF7 /* AdyenDemo_AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B7D39A27B6D29100EEFCF7 /* Build configuration list for PBXNativeTarget "AdyenDemo_AppTests" */;
+			buildPhases = (
+				E6476D43C37039B7B1FAC3FA /* [CP] Check Pods Manifest.lock */,
+				18B7D37F27B6D29100EEFCF7 /* Sources */,
+				18B7D38027B6D29100EEFCF7 /* Frameworks */,
+				18B7D38127B6D29100EEFCF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B7D38527B6D29100EEFCF7 /* PBXTargetDependency */,
+			);
+			name = AdyenDemo_AppTests;
+			productName = AdyenDemo_AppTests;
+			productReference = 18B7D38327B6D29100EEFCF7 /* AdyenDemo_AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18B7D38C27B6D29100EEFCF7 /* AdyenDemo_AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B7D39D27B6D29100EEFCF7 /* Build configuration list for PBXNativeTarget "AdyenDemo_AppUITests" */;
+			buildPhases = (
+				D61682A04E18A6B32237521B /* [CP] Check Pods Manifest.lock */,
+				18B7D38927B6D29100EEFCF7 /* Sources */,
+				18B7D38A27B6D29100EEFCF7 /* Frameworks */,
+				18B7D38B27B6D29100EEFCF7 /* Resources */,
+				1F215787D275B87931A8C3D9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B7D38F27B6D29100EEFCF7 /* PBXTargetDependency */,
+			);
+			name = AdyenDemo_AppUITests;
+			productName = AdyenDemo_AppUITests;
+			productReference = 18B7D38D27B6D29100EEFCF7 /* AdyenDemo_AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B7D36527B6D28F00EEFCF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					18B7D36C27B6D28F00EEFCF7 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					18B7D38227B6D29100EEFCF7 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 18B7D36C27B6D28F00EEFCF7;
+					};
+					18B7D38C27B6D29100EEFCF7 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 18B7D36C27B6D28F00EEFCF7;
+					};
+				};
+			};
+			buildConfigurationList = 18B7D36827B6D28F00EEFCF7 /* Build configuration list for PBXProject "AdyenDemo_App" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B7D36427B6D28F00EEFCF7;
+			productRefGroup = 18B7D36E27B6D28F00EEFCF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B7D36C27B6D28F00EEFCF7 /* AdyenDemo_App */,
+				18B7D38227B6D29100EEFCF7 /* AdyenDemo_AppTests */,
+				18B7D38C27B6D29100EEFCF7 /* AdyenDemo_AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B7D36B27B6D28F00EEFCF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B7D37D27B6D29000EEFCF7 /* LaunchScreen.storyboard in Resources */,
+				18B7D37A27B6D29000EEFCF7 /* Assets.xcassets in Resources */,
+				18B7D37827B6D28F00EEFCF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B7D38127B6D29100EEFCF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B7D38B27B6D29100EEFCF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F215787D275B87931A8C3D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdyenDemo_App-AdyenDemo_AppUITests/Pods-AdyenDemo_App-AdyenDemo_AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdyenDemo_App-AdyenDemo_AppUITests/Pods-AdyenDemo_App-AdyenDemo_AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdyenDemo_App-AdyenDemo_AppUITests/Pods-AdyenDemo_App-AdyenDemo_AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D333D50742FD00DCD7463E8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdyenDemo_App/Pods-AdyenDemo_App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdyenDemo_App/Pods-AdyenDemo_App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdyenDemo_App/Pods-AdyenDemo_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D61682A04E18A6B32237521B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdyenDemo_App-AdyenDemo_AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D67878B874BE5B45028E896E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdyenDemo_App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6476D43C37039B7B1FAC3FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdyenDemo_AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B7D36927B6D28F00EEFCF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EAC6CF27B9323E008A0540 /* POIRequestModel.swift in Sources */,
+				18B7D3AC27B6D56900EEFCF7 /* Constants.swift in Sources */,
+				18B7D3A927B6D53C00EEFCF7 /* POIRestHandler.swift in Sources */,
+				18B7D3B127B6D64900EEFCF7 /* LocationManager.swift in Sources */,
+				18B7D3B327B722C400EEFCF7 /* POIResponseModel.swift in Sources */,
+				1837660027B85E8E000035CE /* POITableViewCell.swift in Sources */,
+				18EAC6CD27B92F76008A0540 /* BaseViewController.swift in Sources */,
+				18B7D37527B6D28F00EEFCF7 /* POIViewController.swift in Sources */,
+				18B7D37127B6D28F00EEFCF7 /* AppDelegate.swift in Sources */,
+				183765FD27B82FD1000035CE /* MapAnnotationView.swift in Sources */,
+				18B7D37327B6D28F00EEFCF7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B7D37F27B6D29100EEFCF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EAC6D127B937BD008A0540 /* POIRequestValidation_Test.swift in Sources */,
+				18EAC6D327B93C3C008A0540 /* POISearchApi_Request_TEst.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B7D38927B6D29100EEFCF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B7D38527B6D29100EEFCF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B7D36C27B6D28F00EEFCF7 /* AdyenDemo_App */;
+			targetProxy = 18B7D38427B6D29100EEFCF7 /* PBXContainerItemProxy */;
+		};
+		18B7D38F27B6D29100EEFCF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B7D36C27B6D28F00EEFCF7 /* AdyenDemo_App */;
+			targetProxy = 18B7D38E27B6D29100EEFCF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18B7D37627B6D28F00EEFCF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B7D37727B6D28F00EEFCF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18B7D37B27B6D29000EEFCF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B7D37C27B6D29000EEFCF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18B7D39527B6D29100EEFCF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18B7D39627B6D29100EEFCF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18B7D39827B6D29100EEFCF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A50DAEFF221675DF08BC04 /* Pods-AdyenDemo_App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdyenDemo_App/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syed.ali.AdyenDemo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18B7D39927B6D29100EEFCF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52F6BE113A0CC593EC17BDC /* Pods-AdyenDemo_App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdyenDemo_App/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syed.ali.AdyenDemo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18B7D39B27B6D29100EEFCF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64FA444C017B882DBCED3A92 /* Pods-AdyenDemo_AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syed.ali.AdyenDemo-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdyenDemo_App.app/AdyenDemo_App";
+			};
+			name = Debug;
+		};
+		18B7D39C27B6D29100EEFCF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99647EAF6416AB76E8F01FBC /* Pods-AdyenDemo_AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syed.ali.AdyenDemo-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdyenDemo_App.app/AdyenDemo_App";
+			};
+			name = Release;
+		};
+		18B7D39E27B6D29100EEFCF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D4A576461AED85115E44401 /* Pods-AdyenDemo_App-AdyenDemo_AppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syed.ali.AdyenDemo-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdyenDemo_App;
+			};
+			name = Debug;
+		};
+		18B7D39F27B6D29100EEFCF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F02CB0BED99761C5E95B57F5 /* Pods-AdyenDemo_App-AdyenDemo_AppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syed.ali.AdyenDemo-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdyenDemo_App;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B7D36827B6D28F00EEFCF7 /* Build configuration list for PBXProject "AdyenDemo_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B7D39527B6D29100EEFCF7 /* Debug */,
+				18B7D39627B6D29100EEFCF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B7D39727B6D29100EEFCF7 /* Build configuration list for PBXNativeTarget "AdyenDemo_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B7D39827B6D29100EEFCF7 /* Debug */,
+				18B7D39927B6D29100EEFCF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B7D39A27B6D29100EEFCF7 /* Build configuration list for PBXNativeTarget "AdyenDemo_AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B7D39B27B6D29100EEFCF7 /* Debug */,
+				18B7D39C27B6D29100EEFCF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B7D39D27B6D29100EEFCF7 /* Build configuration list for PBXNativeTarget "AdyenDemo_AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B7D39E27B6D29100EEFCF7 /* Debug */,
+				18B7D39F27B6D29100EEFCF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18B7D36527B6D28F00EEFCF7 /* Project object */;
+}
